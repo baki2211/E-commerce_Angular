@@ -1,0 +1,49 @@
+<h2>Cart</h2>
+<div *ngIf="items.length === 0; else showItems">
+    <div class="alert alert-primary" role="alert">
+        Your cart is empty! Go back to <a routerLink="/products" class="alert-link">Shopping</a>
+      </div>
+    </div>
+<ng-template #showItems>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+    
+            <tbody class="cart-item" *ngFor ="let item of items; let i= index">
+              <tr>
+                <td>{{i +1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.price|currency}}</td>
+              </tr>
+            </tbody>
+          </table>        
+        <span> </span>
+        <h2>Summary</h2>
+        <table class="summary-table">
+          <tbody>
+            <tr>
+              <td>Products</td>
+              <td>${{total}}</td>
+            </tr>
+            <tr>
+              <td>Service 10%</td>
+              <td>${{total + service}}</td>
+            </tr>
+            <tr>
+              <td>Discount</td>
+              <td>${{discount}}</td>
+            </tr>
+            <tr>
+              <th>Total amount inc VAT</th>
+              <td>${{(total + service) - discount }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <span></span>
+</ng-template>
+

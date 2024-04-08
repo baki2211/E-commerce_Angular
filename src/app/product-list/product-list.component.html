@@ -1,0 +1,23 @@
+<h2>Browse through our products</h2>
+<div class="row row-cols-3">
+
+  <div class="prodCard" *ngFor="let product of products; index as id">
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/{{ product.image }}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <div *ngIf="product.availability; else notAvailable">
+            <p>${{product.price}}</p>
+            <a [routerLink]="'/products/' + id" class="btn btn-primary">Details</a>
+            <a (click)="addToCart(product)" class="btn btn-success">Add to Cart</a>
+          </div>
+          <ng-template #notAvailable>
+            <p>Not available</p>
+          </ng-template>
+          
+        </div>
+      </div>
+</div>
+</div>
+

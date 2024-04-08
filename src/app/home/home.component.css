@@ -1,0 +1,19 @@
+  
+  main, .featProd, section.hero, .catLink {
+    padding: 6rem;
+  }
+  .catLink{
+    text-decoration: none;
+  }
+  .catCard {
+    padding: .5rem;
+  }
+  .hero {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/img/hero.jpg") ;
+    margin-top: 10px;
+  }
+  
+  

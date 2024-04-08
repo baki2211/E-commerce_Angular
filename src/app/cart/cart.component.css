@@ -1,0 +1,16 @@
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .summary-table th, .summary-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .summary-table th {
+    background-color: #f2f2f2;
+  }
+  
+  
