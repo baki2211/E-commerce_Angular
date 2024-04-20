@@ -2,7 +2,7 @@ export const products = [
     {
       name: 'Laptop',
       price: 999,
-      image: '../../assets/img/laptop.jpg',
+      image: '../assets/img/laptop.jpg',
       description: 'Powerful laptop for work and entertainment',
       category: 'Electronics',
       quantity: 1,
@@ -29,7 +29,7 @@ export const products = [
     {
       name: 'Running Shoes',
       price: 99,
-      image: '../../assets/img/shoes.jpg',
+      image: '../assets/img/shoes.jpg',
       description: 'Comfortable and durable shoes for running enthusiasts',
       category: 'Sports',
       quantity: 1,
@@ -38,7 +38,7 @@ export const products = [
     {
       name: 'Wireless Mouse',
       price: 29,
-      image: '../../assets/img/mouse.jpg',
+      image: '../assets/img/mouse.jpg',
       description: 'Ergonomic wireless mouse for smooth navigation',
       category: 'Electronics',
       quantity: 1,
@@ -47,7 +47,7 @@ export const products = [
     {
       name: 'Backpack',
       price: 59,
-      image: '../../assets/img/backpack.jpg',
+      image: '../assets/img/backpack.jpg',
       description: 'Durable backpack for everyday use',
       category: 'Fashion',
       quantity: 1,
@@ -56,7 +56,7 @@ export const products = [
     {
       name: 'Portable Speaker',
       price: 89,
-      image: '../../assets/img/speaker.jpg',
+      image: '../assets/img/speaker.jpg',
       description: 'Compact and powerful portable speaker for music lovers',
       category: 'Electronics',
       quantity: 1,
@@ -65,7 +65,7 @@ export const products = [
     {
       name: 'Cookware Set',
       price: 129,
-      image: '../../assets/img/set.jpg',
+      image: '../assets/img/set.jpg',
       description: 'Complete cookware set for your kitchen needs',
       category: 'Home & Kitchen',
       quantity: 1,
@@ -74,7 +74,7 @@ export const products = [
     {
       name: 'Graphic T-Shirt',
       price: 19,
-      image: '../../assets/img/tshirt.jpg',
+      image: '../assets/img/tshirt.jpg',
       description: 'Stylish graphic t-shirt for casual wear',
       category: 'Fashion',
       quantity: 1,
